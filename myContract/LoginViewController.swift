@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var LoginPhoneNumber: UITextField!
     @IBOutlet weak var LoginPassword: UITextField!
     @IBAction func clickLoginButton(_ sender: Any) {
+        print("aaa")
         let phoneNumber = LoginPhoneNumber.text ?? ""
         let password = LoginPassword.text ?? ""
         LCUser.logIn(mobilePhoneNumber: phoneNumber, password: password){result in
