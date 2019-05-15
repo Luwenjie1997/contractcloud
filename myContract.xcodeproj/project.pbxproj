@@ -12,6 +12,7 @@
 		33089BDA227829EF00BEE87A /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089BD9227829EF00BEE87A /* CodeView.swift */; };
 		33089BDC22782A7200BEE87A /* AsunBasicAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089BDB22782A7200BEE87A /* AsunBasicAttributes.swift */; };
 		33089BDE22782ACE00BEE87A /* VertificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089BDD22782ACE00BEE87A /* VertificationCodeViewController.swift */; };
+		33089C95228C5E2900BEE87A /* MainInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089C94228C5E2900BEE87A /* MainInterfaceViewController.swift */; };
 		33B6F77C22745E8800104437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6F77B22745E8800104437 /* AppDelegate.swift */; };
 		33B6F77E22745E8800104437 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6F77D22745E8800104437 /* LoginViewController.swift */; };
 		33B6F78122745E8800104437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B6F77F22745E8800104437 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		33089BD9227829EF00BEE87A /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		33089BDB22782A7200BEE87A /* AsunBasicAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsunBasicAttributes.swift; sourceTree = "<group>"; };
 		33089BDD22782ACE00BEE87A /* VertificationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertificationCodeViewController.swift; sourceTree = "<group>"; };
+		33089C94228C5E2900BEE87A /* MainInterfaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceViewController.swift; sourceTree = "<group>"; };
 		33B6F77822745E8800104437 /* myContract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myContract.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B6F77B22745E8800104437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33B6F77D22745E8800104437 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				33B6F77D22745E8800104437 /* LoginViewController.swift */,
 				33089BB12277114D00BEE87A /* RegisterViewController.swift */,
 				33B6F77F22745E8800104437 /* Main.storyboard */,
+				33089C94228C5E2900BEE87A /* MainInterfaceViewController.swift */,
 				33089BDD22782ACE00BEE87A /* VertificationCodeViewController.swift */,
 				33089BD9227829EF00BEE87A /* CodeView.swift */,
 				33089BDB22782A7200BEE87A /* AsunBasicAttributes.swift */,
@@ -225,6 +228,7 @@
 				33089BDE22782ACE00BEE87A /* VertificationCodeViewController.swift in Sources */,
 				33089BDC22782A7200BEE87A /* AsunBasicAttributes.swift in Sources */,
 				33B6F77E22745E8800104437 /* LoginViewController.swift in Sources */,
+				33089C95228C5E2900BEE87A /* MainInterfaceViewController.swift in Sources */,
 				33B6F77C22745E8800104437 /* AppDelegate.swift in Sources */,
 				33089BDA227829EF00BEE87A /* CodeView.swift in Sources */,
 				33089BB22277114D00BEE87A /* RegisterViewController.swift in Sources */,
