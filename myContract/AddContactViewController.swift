@@ -63,4 +63,8 @@ class AddContactViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
+    @IBAction func tapGesture(_ sender: Any) {
+        NewContactName.resignFirstResponder()
+        NewContactPhone.resignFirstResponder()
+    }
 }

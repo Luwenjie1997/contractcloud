@@ -103,4 +103,8 @@ class RegisterViewController: UIViewController {
     
     
     
+    @IBAction func tapGestureController(_ sender: Any) {
+        registerPhoneNumber.resignFirstResponder()
+        RegisterPassword.resignFirstResponder()
+    }
 }
