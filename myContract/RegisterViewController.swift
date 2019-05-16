@@ -46,8 +46,8 @@ class RegisterViewController: UIViewController {
     @IBAction func clickRegisterButton(_ sender: UIButton) {
         let phoneNumber = registerPhoneNumber.text ?? ""
         let password = RegisterPassword.text ?? ""
-        if phoneNumber.count == 11 {
-            if password.count >= 8 && password.count <= 16 {
+        if isPhoneNumber(phoneNumber: phoneNumber) {
+            if isPasswordRuler(password: password) {
                 let user = LCUser()
                 user.username = LCString(phoneNumber)
                 user.mobilePhoneNumber = LCString(phoneNumber)
@@ -60,10 +60,10 @@ class RegisterViewController: UIViewController {
 //                    self.navigationController?.pushViewController(vertifyViewController, animated: true)
                 }
             }else{
-                showDetail(first: "密码无效", second: "请输入8-16位密码")
+                showDetail(first: "密码无效", second: "6-8位字母和数字组合")
             }
         }else {
-            showDetail(first: "手机号无效", second: "请输入11位手机号")
+            showDetail(first: "手机号无效", second: "请输入有效的11位手机号")
         }
         
     }
@@ -73,6 +73,32 @@ class RegisterViewController: UIViewController {
         let action = UIAlertAction(title: "确定", style: .default, handler: nil)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    //判断手机号是否有效
+    private func isPhoneNumber(phoneNumber:String) -> Bool {
+        if phoneNumber.count == 0 {
+            return false
+        }
+        let mobile = "^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$"
+        let regexMobile = NSPredicate(format: "SELF MATCHES %@",mobile)
+        if regexMobile.evaluate(with: phoneNumber) == true {
+            return true
+        }else
+        {
+            return false
+        }
+    }
+    
+    private func isPasswordRuler(password:String) -> Bool {
+        let passwordRule = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,8}$"
+        let regexPassword = NSPredicate(format: "SELF MATCHES %@",passwordRule)
+        if regexPassword.evaluate(with: password) == true {
+            return true
+        }else
+        {
+            return false
+        }
     }
     
     
