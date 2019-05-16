@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LeanCloud
 
 class MineViewController: UIViewController {
 
@@ -36,5 +37,20 @@ class MineViewController: UIViewController {
          self.tabBarController?.tabBar.isHidden = false
     }
     
-
+    
+    
+    @IBAction func identifier(_ sender: UIButton) {
+        let user = LCUser.current!
+        if let name = user.get("Name") , let id = user.get("ID"){
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let VC = storyboard.instantiateViewController(withIdentifier: "IdentifierHavenSet") as? IdentifierHavenSetViewController
+            self.navigationController?.pushViewController(VC!, animated: true)
+        }else{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let VC = storyboard.instantiateViewController(withIdentifier: "IdentifierNotSet") as? IdentifierViewController
+            self.navigationController?.pushViewController(VC!, animated: true)
+        }
+        
+    }
+    
 }

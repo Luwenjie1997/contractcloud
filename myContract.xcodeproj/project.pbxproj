@@ -24,6 +24,7 @@
 		33D3C817228D3CEC0093696A /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D3C816228D3CEC0093696A /* ContactListTableViewController.swift */; };
 		33D3C819228D3D050093696A /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D3C818228D3D050093696A /* AddContactViewController.swift */; };
 		33D3C83D228DA64C0093696A /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D3C83C228DA64C0093696A /* IdentifierViewController.swift */; };
+		33D3C83F228DF4DC0093696A /* IdentifierHavenSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		33D3C816228D3CEC0093696A /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
 		33D3C818228D3D050093696A /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		33D3C83C228DA64C0093696A /* IdentifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
+		33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierHavenSetViewController.swift; sourceTree = "<group>"; };
 		5A9DD948D8D4585453B55726 /* Pods-myContract.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myContract.release.xcconfig"; path = "Target Support Files/Pods-myContract/Pods-myContract.release.xcconfig"; sourceTree = "<group>"; };
 		9DDA6CEE713CD0E6D7BB3CBE /* Pods_myContract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myContract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 				33B6F77D22745E8800104437 /* LoginViewController.swift */,
 				33089BB12277114D00BEE87A /* RegisterViewController.swift */,
 				33B6F77F22745E8800104437 /* Main.storyboard */,
+				33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */,
 				33D3C83C228DA64C0093696A /* IdentifierViewController.swift */,
 				33D3C816228D3CEC0093696A /* ContactListTableViewController.swift */,
 				33D3C818228D3D050093696A /* AddContactViewController.swift */,
@@ -250,6 +253,7 @@
 				33089C99228C8E4200BEE87A /* MineViewController.swift in Sources */,
 				33089C95228C5E2900BEE87A /* MainInterfaceViewController.swift in Sources */,
 				33B6F77C22745E8800104437 /* AppDelegate.swift in Sources */,
+				33D3C83F228DF4DC0093696A /* IdentifierHavenSetViewController.swift in Sources */,
 				33D3C83D228DA64C0093696A /* IdentifierViewController.swift in Sources */,
 				33D3C815228D3C6A0093696A /* DataHandle.swift in Sources */,
 				33D3C817228D3CEC0093696A /* ContactListTableViewController.swift in Sources */,
