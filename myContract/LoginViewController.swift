@@ -44,12 +44,10 @@ class LoginViewController: UIViewController {
 //                break
                 let sb = UIStoryboard(name: "Main", bundle: nil)
 //                let vc = sb.instantiateViewController(withIdentifier: "tabBarController")
-//                print(vc)
 //                self.present(vc, animated: true, completion: nil)
                 var vc :MainInterfaceViewController!
                 vc = sb.instantiateViewController(withIdentifier: "tabBarController") as! MainInterfaceViewController
                 vc.MainUser = user
-                print(vc.MainUser?.mobilePhoneNumber)
                 self.present(vc, animated: true, completion: nil)
                 break
             case .failure(let error):

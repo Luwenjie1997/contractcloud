@@ -48,7 +48,6 @@ class VertificationCodeViewController: UIViewController {
 //                self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
                 let alert = UIAlertController(title: "注册成功", message: "界面将自动跳转至登陆界面", preferredStyle: .alert)
                 let action = UIAlertAction(title: "确定", style: .default, handler: {action in
-                    print("yanzhengchenggong")
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let loginVC = storyboard.instantiateViewController(withIdentifier: "myLoginStoryboard") as? LoginViewController
                     self.navigationController?.pushViewController(loginVC!, animated: true)

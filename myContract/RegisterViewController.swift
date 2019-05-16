@@ -46,8 +46,8 @@ class RegisterViewController: UIViewController {
     @IBAction func clickRegisterButton(_ sender: UIButton) {
         let phoneNumber = registerPhoneNumber.text ?? ""
         let password = RegisterPassword.text ?? ""
-        if isPhoneNumber(phoneNumber: phoneNumber) {
-            if isPasswordRuler(password: password) {
+        if DataHandle.shareInstence.isPhoneNumber(phoneNumber: phoneNumber) {
+            if DataHandle.shareInstence.isPasswordRuler(password: password) {
                 let user = LCUser()
                 user.username = LCString(phoneNumber)
                 user.mobilePhoneNumber = LCString(phoneNumber)
@@ -75,31 +75,31 @@ class RegisterViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    //判断手机号是否有效
-    private func isPhoneNumber(phoneNumber:String) -> Bool {
-        if phoneNumber.count == 0 {
-            return false
-        }
-        let mobile = "^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$"
-        let regexMobile = NSPredicate(format: "SELF MATCHES %@",mobile)
-        if regexMobile.evaluate(with: phoneNumber) == true {
-            return true
-        }else
-        {
-            return false
-        }
-    }
+//    //判断手机号是否有效
+//    private func isPhoneNumber(phoneNumber:String) -> Bool {
+//        if phoneNumber.count == 0 {
+//            return false
+//        }
+//        let mobile = "^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$"
+//        let regexMobile = NSPredicate(format: "SELF MATCHES %@",mobile)
+//        if regexMobile.evaluate(with: phoneNumber) == true {
+//            return true
+//        }else
+//        {
+//            return false
+//        }
+//    }
     
-    private func isPasswordRuler(password:String) -> Bool {
-        let passwordRule = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,8}$"
-        let regexPassword = NSPredicate(format: "SELF MATCHES %@",passwordRule)
-        if regexPassword.evaluate(with: password) == true {
-            return true
-        }else
-        {
-            return false
-        }
-    }
+//    private func isPasswordRuler(password:String) -> Bool {
+//        let passwordRule = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,8}$"
+//        let regexPassword = NSPredicate(format: "SELF MATCHES %@",passwordRule)
+//        if regexPassword.evaluate(with: password) == true {
+//            return true
+//        }else
+//        {
+//            return false
+//        }
+//    }
     
     
     
