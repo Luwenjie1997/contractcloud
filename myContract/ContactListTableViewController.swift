@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LeanCloud
 
 class ContactListTableViewController: UITableViewController {
 

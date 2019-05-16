@@ -11,10 +11,16 @@ import LeanCloud
 
 class MainInterfaceViewController: UITabBarController {
 
-    var MainUser :LCUser?
+//    var MainUser :LCUser?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+//        if let user = LCUser.current{
+//            print("there is a user!")
+//            print(user.username!)
+//        }else{
+//            print("there is no user!")
+//        }
         // Do any additional setup after loading the view.
 
     }

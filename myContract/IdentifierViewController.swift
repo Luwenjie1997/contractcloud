@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LeanCloud
 
 class IdentifierViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
@@ -23,6 +24,35 @@ class IdentifierViewController: UIViewController,UIImagePickerControllerDelegate
     //保存
     
     @IBAction func saveInformation(_ sender: Any) {
+        let name = userName.text ?? ""
+        let id = userID.text ?? ""
+        if name != "" && id != ""{
+            if DataHandle.shareInstence.IsIdentityCard(id){
+                let user = LCUser.current!
+                //保存真实姓名和身份证
+                try? user.set("Name", value: name)
+                try? user.set("ID", value: id)
+                user.save(){result in
+                    switch result{
+                    case .success:
+                        let alert = UIAlertController(title: "保存成功", message: "界面将自动跳转", preferredStyle: .alert)
+                        let action = UIAlertAction(title: "确定", style: .default, handler: {action in
+                            self.navigationController?.popViewController(animated: true)
+                        })
+                        alert.addAction(action)
+                        self.present(alert, animated: true, completion: nil)
+                        break
+                    case .failure(let error):
+                        print(error)
+                        self.showDetail(first: "保存失败", second: error.reason!)
+                    }
+                }
+            }else{
+                showDetail(first: "身份证号无效", second: "请输入真实的身份证号码")
+            }
+        }else{
+            showDetail(first: "姓名或身份证号为空", second: "请输入姓名和身份证号码")
+        }
         
     }
     
@@ -119,5 +149,12 @@ class IdentifierViewController: UIViewController,UIImagePickerControllerDelegate
     @IBAction func tapGesture(_ sender: Any) {
         userName.resignFirstResponder()
         userID.resignFirstResponder()
+    }
+    
+    private func showDetail (first alertTitle :String , second alertMessage :String ){
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        let action = UIAlertAction(title: "确定", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
 }

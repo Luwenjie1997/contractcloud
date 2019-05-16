@@ -22,7 +22,7 @@ class AddContactViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -36,7 +36,16 @@ class AddContactViewController: UIViewController {
             if DataHandle.shareInstence.isPhoneNumber(phoneNumber: phone){
                 let newContact = Contact.init(name: name, phone: phone)
                 DataHandle.shareInstence.addContactToArray(contact: newContact)
-                showDetail(first: "添加成功", second: "")
+                let alert = UIAlertController(title: "保存成功", message: "界面将自动跳转至联系人界面", preferredStyle: .alert)
+                let action = UIAlertAction(title: "确定", style: .default, handler: {action in
+//                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                    let VC = storyboard.instantiateViewController(withIdentifier: "MyContactListStoryboeard") as! ContactListTableViewController
+//                    print(VC)
+                    self.navigationController?.popViewController(animated: true)
+                })
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+                
                 print(DataHandle.shareInstence.contactArray)
             }else{
                 showDetail(first: "手机号无效", second: "请输入11位有效手机号")

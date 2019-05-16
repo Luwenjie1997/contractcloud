@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
 //                self.present(vc, animated: true, completion: nil)
                 var vc :MainInterfaceViewController!
                 vc = sb.instantiateViewController(withIdentifier: "tabBarController") as! MainInterfaceViewController
-                vc.MainUser = user
+//                vc.MainUser = user
                 self.present(vc, animated: true, completion: nil)
                 break
             case .failure(let error):
