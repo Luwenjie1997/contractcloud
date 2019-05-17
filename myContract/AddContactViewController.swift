@@ -10,15 +10,6 @@ import UIKit
 
 class AddContactViewController: UIViewController {
     
-//    // 要修改的联系人信息
-//    var contact : Contact?
-//    // 要修改的联系人下标
-//    var index : Int?
-//
-//    // 重定义，相当于typedef
-//    typealias BLOCK = () -> Void
-//    // 声明一个闭包属性
-//    var myBlock : BLOCK?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +27,7 @@ class AddContactViewController: UIViewController {
             if DataHandle.shareInstence.isPhoneNumber(phoneNumber: phone){
                 let newContact = Contact.init(name: name, phone: phone)
                 DataHandle.shareInstence.addContactToArray(contact: newContact)
+                print(DataHandle.shareInstence.contactArray)
                 let alert = UIAlertController(title: "保存成功", message: "界面将自动跳转至联系人界面", preferredStyle: .alert)
                 let action = UIAlertAction(title: "确定", style: .default, handler: {action in
 //                    let storyboard = UIStoryboard(name: "Main", bundle: nil)

@@ -17,6 +17,7 @@ class DataHandle: NSObject {
             return contactArray.count
         }
     }
+
     
     static let shareInstence = DataHandle()
     
