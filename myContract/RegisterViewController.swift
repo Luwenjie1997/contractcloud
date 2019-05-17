@@ -53,27 +53,27 @@ class RegisterViewController: UIViewController {
                 user.mobilePhoneNumber = LCString(phoneNumber)
                 user.password = LCString(password)
                 if let result = user.signUp().error{
-                    showDetail(first: "注册失败", second: result.reason ?? "ok")
+                    self.showDetail(first: "注册失败", second: result.reason ?? "ok")
                 }else{
 //                    let vertifyViewController = VertificationCodeViewController()
 //                    vertifyViewController.phonenumber = phoneNumber
 //                    self.navigationController?.pushViewController(vertifyViewController, animated: true)
                 }
             }else{
-                showDetail(first: "密码无效", second: "6-8位字母和数字组合")
+                self.showDetail(first: "密码无效", second: "6-8位字母和数字组合")
             }
         }else {
-            showDetail(first: "手机号无效", second: "请输入有效的11位手机号")
+            self.showDetail(first: "手机号无效", second: "请输入有效的11位手机号")
         }
         
     }
     
-    private func showDetail (first alertTitle :String , second alertMessage :String ){
-        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
-        let action = UIAlertAction(title: "确定", style: .default, handler: nil)
-        alert.addAction(action)
-        self.present(alert, animated: true, completion: nil)
-    }
+//    private func showDetail (first alertTitle :String , second alertMessage :String ){
+//        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+//        let action = UIAlertAction(title: "确定", style: .default, handler: nil)
+//        alert.addAction(action)
+//        self.present(alert, animated: true, completion: nil)
+//    }
     
 //    //判断手机号是否有效
 //    private func isPhoneNumber(phoneNumber:String) -> Bool {

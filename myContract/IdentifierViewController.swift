@@ -48,10 +48,10 @@ class IdentifierViewController: UIViewController,UIImagePickerControllerDelegate
                     }
                 }
             }else{
-                showDetail(first: "身份证号无效", second: "请输入真实的身份证号码")
+                self.showDetail(first: "身份证号无效", second: "请输入真实的身份证号码")
             }
         }else{
-            showDetail(first: "姓名或身份证号为空", second: "请输入姓名和身份证号码")
+            self.showDetail(first: "姓名或身份证号为空", second: "请输入姓名和身份证号码")
         }
         
     }
@@ -151,10 +151,10 @@ class IdentifierViewController: UIViewController,UIImagePickerControllerDelegate
         userID.resignFirstResponder()
     }
     
-    private func showDetail (first alertTitle :String , second alertMessage :String ){
-        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
-        let action = UIAlertAction(title: "确定", style: .default, handler: nil)
-        alert.addAction(action)
-        self.present(alert, animated: true, completion: nil)
-    }
+//    private func showDetail (first alertTitle :String , second alertMessage :String ){
+//        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+//        let action = UIAlertAction(title: "确定", style: .default, handler: nil)
+//        alert.addAction(action)
+//        self.present(alert, animated: true, completion: nil)
+//    }
 }
