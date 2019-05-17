@@ -10,14 +10,6 @@ import Foundation
 import LeanCloud
 
 class DataHandle: NSObject {
-    var contactArray = Array<Contact>()
-    // 声明计算属性
-    var count : Int {
-        get {
-            return contactArray.count
-        }
-    }
-
     
     static let shareInstence = DataHandle()
     
@@ -109,32 +101,4 @@ class DataHandle: NSObject {
         return false
     }
     
-    // MARK: - 添加联系人
-    func addContactToArray (contact : Contact) {
-        self.contactArray.append(contact)
-    }
-    
-    // MARK: - 根据下标获取联系人
-    func findContactWithIndex (index : Int) -> Contact {
-        return self.contactArray[index]
-    }
-    
-    // MARK: - 更新联系人信息
-    func updataContactWithIndex (newContact : Contact, index : Int) -> Void {
-        self.contactArray.remove(at: index)
-        self.contactArray.insert(newContact, at: index)
-    }
-    
-    // MARK: - 删除联系人
-    func removeContactWithIndex (index : Int) -> Void {
-        self.contactArray.remove(at: index)
-    }
-    
-    // MARK: - 移动
-    func changeContact (fromIndexPath : Int, toIndexPath : Int) {
-        let contact = self.contactArray[fromIndexPath]
-        self.contactArray.remove(at: fromIndexPath)
-        
-        self.contactArray.insert(contact, at: toIndexPath)
-    }
 }

@@ -9,6 +9,7 @@
 import UIKit
 import LeanCloud
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             id:  "WN8N4j7uVJa7kqXtuXU7ws5b-gzGzoHsz",
             key: "9xQN8PC5n6gC9oysQGanPdS8"
         )
+        
         
         
         return true
