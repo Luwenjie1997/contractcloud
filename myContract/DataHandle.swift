@@ -19,6 +19,18 @@ class DataHandle: NSObject {
         super.init()
     }
     
+    public let currentUser = LCUser.current
+    
+    //获取LCObjects
+    func getObjects() -> [LCObject]? {
+        var myContracts :[LCObject]?
+        let userPhone = currentUser!.mobilePhoneNumber!.jsonString.trimmingCharacters(in: .punctuationCharacters)
+        print(userPhone)
+        let query = LCQuery(className: "_File")
+        query.whereKey("user", .equalTo(userPhone))
+        myContracts = query.find().objects
+        return myContracts
+    }
     
     //判断手机号是否有效
     func isPhoneNumber(phoneNumber:String) -> Bool {

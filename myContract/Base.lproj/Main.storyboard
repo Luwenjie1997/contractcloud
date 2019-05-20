@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="PBG-Lw-k4H">
-                                <rect key="frame" x="20" y="208" width="374" height="357.5"/>
+                                <rect key="frame" x="20" y="88" width="374" height="357.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Contract" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGB-Q2-74j">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="65.5"/>
@@ -89,8 +89,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="PBG-Lw-k4H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="FcR-sw-M79"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PBG-Lw-k4H" secondAttribute="trailing" constant="20" id="JZL-hu-329"/>
+                            <constraint firstItem="PBG-Lw-k4H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fTr-NV-ULD"/>
                             <constraint firstItem="PBG-Lw-k4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pME-xO-EyP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -135,10 +135,10 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQf-YB-iJa">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="我的认证">
-                                                    <color key="titleColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -147,19 +147,19 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noh-0I-x4k">
                                                 <rect key="frame" x="0.0" y="68" width="374" height="60"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="我的签章">
-                                                    <color key="titleColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKj-BI-2cp">
                                                 <rect key="frame" x="0.0" y="136" width="374" height="60"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="联系人">
-                                                    <color key="titleColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -168,19 +168,19 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdV-uE-v7a">
                                                 <rect key="frame" x="0.0" y="204" width="374" height="60"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="设置">
-                                                    <color key="titleColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXP-cL-otg">
                                                 <rect key="frame" x="0.0" y="272" width="374" height="60"/>
-                                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="帮助">
-                                                    <color key="titleColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
@@ -358,12 +358,57 @@
         <!--合同-->
         <scene sceneID="ilj-8j-fye">
             <objects>
-                <viewController id="QFH-5b-Xw5" sceneMemberID="viewController">
+                <viewController id="QFH-5b-Xw5" customClass="contractViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YKU-lk-R4z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v1s-oK-liG">
+                                <rect key="frame" x="20" y="108" width="374" height="322"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Contract" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7l-ar-ujF">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="65.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                        <color key="textColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVO-01-LNy">
+                                        <rect key="frame" x="0.0" y="85.5" width="374" height="65.5"/>
+                                        <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="所有合同">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="JjI-ju-wmL" kind="show" id="E09-Pe-Gyu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYX-TF-2dr">
+                                        <rect key="frame" x="0.0" y="171" width="374" height="65.5"/>
+                                        <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="待自己签合同">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-WF-Ljx">
+                                        <rect key="frame" x="0.0" y="256.5" width="374" height="65.5"/>
+                                        <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="待他人签合同">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v1s-oK-liG" firstAttribute="top" secondItem="krp-oP-0k4" secondAttribute="top" constant="20" id="6mg-7t-uAD"/>
+                            <constraint firstItem="krp-oP-0k4" firstAttribute="trailing" secondItem="v1s-oK-liG" secondAttribute="trailing" constant="20" id="82Z-UC-JFa"/>
+                            <constraint firstItem="v1s-oK-liG" firstAttribute="leading" secondItem="krp-oP-0k4" secondAttribute="leading" constant="20" id="PjG-aj-SpO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="krp-oP-0k4"/>
                     </view>
                     <navigationItem key="navigationItem" title="合同" id="02y-Q4-WWd"/>
@@ -577,7 +622,7 @@
         <!--Create Contact View Controller-->
         <scene sceneID="rea-T7-ast">
             <objects>
-                <viewController id="ErP-g7-MVg" customClass="CreateContactViewController" customModule="AddressBookContacts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ErP-g7-MVg" customClass="CreateContactViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ftt-bn-IgG"/>
                         <viewControllerLayoutGuide type="bottom" id="p1t-WT-Sbe"/>
@@ -692,7 +737,7 @@
         <!--Contacts View Controller-->
         <scene sceneID="MyF-VD-k6m">
             <objects>
-                <viewController id="cRb-kS-KZq" customClass="ContactsViewController" customModule="AddressBookContacts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cRb-kS-KZq" customClass="ContactsViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K5z-M5-kgj"/>
                         <viewControllerLayoutGuide type="bottom" id="GY8-ei-9lS"/>
@@ -779,6 +824,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUH-3T-9nS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4571" y="1642"/>
+        </scene>
+        <!--所有合同-->
+        <scene sceneID="7P0-s6-3XB">
+            <objects>
+                <tableViewController id="JjI-ju-wmL" customClass="pdfTableViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BRH-zU-uTg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FileCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FileCell" id="yqi-WL-8yA">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yqi-WL-8yA" id="mKN-yh-VV8">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1IS-Jz-qL4" kind="show" id="kcV-L7-D5a"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JjI-ju-wmL" id="D1r-7r-bx1"/>
+                            <outlet property="delegate" destination="JjI-ju-wmL" id="QHc-t9-9Pt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="所有合同" id="T6O-ng-rSD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="a1e-WN-5N3">
+                            <connections>
+                                <segue destination="8nd-ay-vv8" kind="show" id="VfW-dD-VU3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKS-42-dso" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4570" y="846"/>
+        </scene>
+        <!--Add New Contract View Controller-->
+        <scene sceneID="PHk-Xz-UeT">
+            <objects>
+                <viewController id="8nd-ay-vv8" customClass="addNewContractViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gD5-lB-Yyb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3TZ-RS-fv1" customClass="PDFView">
+                                <rect key="frame" x="20" y="88" width="374" height="668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VYi-nx-xe5"/>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="3TZ-RS-fv1" id="ZCe-Ch-K4o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XI7-sJ-05z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5446" y="53"/>
+        </scene>
+        <!--Pdf View Controller-->
+        <scene sceneID="XAe-MX-Dkx">
+            <objects>
+                <viewController id="1IS-Jz-qL4" customClass="pdfViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WyL-Qd-Ps0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hPc-ik-vkU" customClass="PDFView">
+                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fDr-RV-ebd"/>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="hPc-ik-vkU" id="8Tr-0d-OeB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4V-RK-yjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5446.376811594203" y="844.41964285714278"/>
         </scene>
     </scenes>
     <resources>

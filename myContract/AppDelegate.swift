@@ -49,6 +49,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let path = url.absoluteString
+        let string = NSMutableString.init(string: path)
+        if path.hasPrefix("file://"){
+            string.replaceOccurrences(of: "file://", with: "", options: NSString.CompareOptions.caseInsensitive, range: NSMakeRange(0, path.count))
+        }
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "pdf"), object: string)
+        return true
+    }
 
 
 }
