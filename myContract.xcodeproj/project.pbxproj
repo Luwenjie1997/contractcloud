@@ -24,6 +24,7 @@
 		331EA8232292AB2E00F52455 /* pdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EA8222292AB2E00F52455 /* pdfViewController.swift */; };
 		331EA8252292AEE900F52455 /* addNewContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EA8242292AEE900F52455 /* addNewContractViewController.swift */; };
 		331EA8272292B0CB00F52455 /* contractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EA8262292B0CB00F52455 /* contractViewController.swift */; };
+		331EA8292292FF4F00F52455 /* tint.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 331EA8282292FF4F00F52455 /* tint.pdf */; };
 		33B6F77C22745E8800104437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6F77B22745E8800104437 /* AppDelegate.swift */; };
 		33B6F77E22745E8800104437 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6F77D22745E8800104437 /* LoginViewController.swift */; };
 		33B6F78122745E8800104437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B6F77F22745E8800104437 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		331EA8222292AB2E00F52455 /* pdfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdfViewController.swift; sourceTree = "<group>"; };
 		331EA8242292AEE900F52455 /* addNewContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewContractViewController.swift; sourceTree = "<group>"; };
 		331EA8262292B0CB00F52455 /* contractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractViewController.swift; sourceTree = "<group>"; };
+		331EA8282292FF4F00F52455 /* tint.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tint.pdf; sourceTree = "<group>"; };
 		33B6F77822745E8800104437 /* myContract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myContract.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B6F77B22745E8800104437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33B6F77D22745E8800104437 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		33B6F76F22745E8800104437 = {
 			isa = PBXGroup;
 			children = (
+				331EA8282292FF4F00F52455 /* tint.pdf */,
 				33184808228F0F6F00262E1B /* VertifierCode */,
 				33184807228F0EE400262E1B /* Contact */,
 				33B6F77A22745E8800104437 /* myContract */,
@@ -225,6 +228,7 @@
 				33B6F78622745E8900104437 /* LaunchScreen.storyboard in Resources */,
 				33B6F78322745E8900104437 /* Assets.xcassets in Resources */,
 				33B6F78122745E8800104437 /* Main.storyboard in Resources */,
+				331EA8292292FF4F00F52455 /* tint.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,6 +41,9 @@ class pdfViewController: UIViewController {
             let file = LCFile(payload: .fileURL(fileURL: url))
             let userPhone = DataHandle.shareInstence.currentUser!.mobilePhoneNumber!.jsonString.trimmingCharacters(in: .punctuationCharacters)
             try?file.set("user", value: userPhone)
+            //Isigned代表我是否签名，heSign代表对方是否签名，0是未签，1是已签
+            try?file.set("iSigne", value: 1)
+            try?file.set("heSign", value: 0)
             file.save(
                 progress: { progress in
                     print(progress)
