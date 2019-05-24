@@ -33,6 +33,8 @@
 		33D3C815228D3C6A0093696A /* DataHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D3C814228D3C6A0093696A /* DataHandle.swift */; };
 		33D3C83D228DA64C0093696A /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D3C83C228DA64C0093696A /* IdentifierViewController.swift */; };
 		33D3C83F228DF4DC0093696A /* IdentifierHavenSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */; };
+		33EA3C4122985375003780A7 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA3C4022985375003780A7 /* YPDrawSignatureView.swift */; };
+		33EA3C4522985403003780A7 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA3C4422985403003780A7 /* SignatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		33D3C814228D3C6A0093696A /* DataHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandle.swift; sourceTree = "<group>"; };
 		33D3C83C228DA64C0093696A /* IdentifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
 		33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierHavenSetViewController.swift; sourceTree = "<group>"; };
+		33EA3C4022985375003780A7 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
+		33EA3C4422985403003780A7 /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
 		5A9DD948D8D4585453B55726 /* Pods-myContract.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myContract.release.xcconfig"; path = "Target Support Files/Pods-myContract/Pods-myContract.release.xcconfig"; sourceTree = "<group>"; };
 		9DDA6CEE713CD0E6D7BB3CBE /* Pods_myContract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myContract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +119,7 @@
 		33B6F76F22745E8800104437 = {
 			isa = PBXGroup;
 			children = (
+				33EA3C43229853DF003780A7 /* signature */,
 				33EA3C252297D41A003780A7 /* contractPDF */,
 				331EA8282292FF4F00F52455 /* tint.pdf */,
 				33184808228F0F6F00262E1B /* VertifierCode */,
@@ -162,6 +167,15 @@
 				331EA8202292A9CD00F52455 /* pdfTableViewController.swift */,
 			);
 			path = contractPDF;
+			sourceTree = "<group>";
+		};
+		33EA3C43229853DF003780A7 /* signature */ = {
+			isa = PBXGroup;
+			children = (
+				33EA3C4022985375003780A7 /* YPDrawSignatureView.swift */,
+				33EA3C4422985403003780A7 /* SignatureViewController.swift */,
+			);
+			path = signature;
 			sourceTree = "<group>";
 		};
 		9C59195378546A8792B292D0 /* Frameworks */ = {
@@ -301,6 +315,7 @@
 				331EA8232292AB2E00F52455 /* pdfViewController.swift in Sources */,
 				33184814228F13B500262E1B /* CreateContactViewController.swift in Sources */,
 				33089BDC22782A7200BEE87A /* AsunBasicAttributes.swift in Sources */,
+				33EA3C4522985403003780A7 /* SignatureViewController.swift in Sources */,
 				33B6F77E22745E8800104437 /* LoginViewController.swift in Sources */,
 				331EA8252292AEE900F52455 /* addNewContractViewController.swift in Sources */,
 				33089C99228C8E4200BEE87A /* MineViewController.swift in Sources */,
@@ -313,6 +328,7 @@
 				33D3C815228D3C6A0093696A /* DataHandle.swift in Sources */,
 				33089BDA227829EF00BEE87A /* CodeView.swift in Sources */,
 				3318480C228F12C100262E1B /* UIViewController+Alerts.swift in Sources */,
+				33EA3C4122985375003780A7 /* YPDrawSignatureView.swift in Sources */,
 				33089BB22277114D00BEE87A /* RegisterViewController.swift in Sources */,
 				3318480A228F127800262E1B /* ContactEntry.swift in Sources */,
 				33184812228F138900262E1B /* ContactViewController.swift in Sources */,

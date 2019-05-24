@@ -877,7 +877,7 @@
         <!--Add New Contract View Controller-->
         <scene sceneID="PHk-Xz-UeT">
             <objects>
-                <viewController id="8nd-ay-vv8" customClass="addNewContractViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newContractStoryboard" id="8nd-ay-vv8" customClass="addNewContractViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gD5-lB-Yyb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -905,6 +905,9 @@
                                                 <state key="normal" title="签名">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="YN5-ne-hY6" kind="show" identifier="showSignatureSegue" id="4Tz-HU-Eva"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaR-Bq-usn">
                                                 <rect key="frame" x="191" y="0.0" width="183" height="48"/>
@@ -971,6 +974,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4V-RK-yjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5446.376811594203" y="844.41964285714278"/>
+        </scene>
+        <!--Signature View Controller-->
+        <scene sceneID="TWV-cp-Srq">
+            <objects>
+                <viewController id="YN5-ne-hY6" customClass="SignatureViewController" customModule="Helloworld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bDe-tp-9O3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nw-PA-5pc">
+                                <rect key="frame" x="0.0" y="13" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="o75-eN-4lK"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Okx-fM-krx" customClass="YPDrawSignatureView" customModule="Helloworld" customModuleProvider="target">
+                                <rect key="frame" x="16" y="207" width="343" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikx-Yh-Z72">
+                                <rect key="frame" x="99" y="447" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="clear"/>
+                                <connections>
+                                    <action selector="clear:" destination="YN5-ne-hY6" eventType="touchUpInside" id="5Q6-0e-Q9w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-Oh-NG5">
+                                <rect key="frame" x="173" y="526" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="save:" destination="YN5-ne-hY6" eventType="touchUpInside" id="CPL-ZO-7W0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="87T-GT-RUF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z4R-s3-Qz2"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="signature" destination="Okx-fM-krx" id="pti-xu-l3f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nL6-CZ-aws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6667" y="53"/>
         </scene>
     </scenes>
     <resources>
