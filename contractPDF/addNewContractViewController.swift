@@ -12,11 +12,12 @@ import PDFKit
 
 class addNewContractViewController: UIViewController {
 
-    
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var titleOfAdd: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tabBarController?.tabBar.isHidden = true
         titleOfAdd.text = "本地文件导入"
         // Do any additional setup after loading the view.
         if let path = Bundle.main.path(forResource: "tint", ofType: "pdf"){
@@ -25,6 +26,10 @@ class addNewContractViewController: UIViewController {
                 pdfView.document = document
                 pdfView.displayMode = .singlePageContinuous
                 pdfView.sizeToFit()
+                pdfView.autoScales = true
+                button1.isHidden = true
+                button2.isHidden = true
+                
             }
         }
         NotificationCenter.default.addObserver(self, selector: #selector(notify(_:)), name: NSNotification.Name(rawValue: "pdf"), object: nil)
@@ -39,6 +44,11 @@ class addNewContractViewController: UIViewController {
         let url = URL(fileURLWithPath: str as! String)
         if let pdfdocument  = PDFDocument(url: url){
             pdfView.document = pdfdocument
+            pdfView.displayMode = .singlePageContinuous
+            pdfView.sizeToFit()
+            pdfView.autoScales = true
+            button1.isHidden = false
+            button2.isHidden = true
             let file = LCFile(payload: .fileURL(fileURL: url))
             let userPhone = DataHandle.shareInstence.currentUser!.mobilePhoneNumber!.jsonString.trimmingCharacters(in: .punctuationCharacters)
             try?file.set("user", value: userPhone)
@@ -61,4 +71,7 @@ class addNewContractViewController: UIViewController {
         }
     }
 
+    @IBAction func send(_ sender: Any) {
+        
+    }
 }

@@ -19,6 +19,9 @@ class pdfViewController: UIViewController {
         super.viewDidLoad()
         
         pdfView.document = document
+        pdfView.displayMode = .singlePageContinuous
+        pdfView.sizeToFit()
+        pdfView.autoScales = true
         NotificationCenter.default.addObserver(self, selector: #selector(notify(_:)), name: NSNotification.Name(rawValue: "pdf"), object: nil)
         // Do any additional setup after loading the view.
         //        if let string = urlstring{
@@ -38,6 +41,9 @@ class pdfViewController: UIViewController {
         let url = URL(fileURLWithPath: str as! String)
         if let pdfdocument  = PDFDocument(url: url){
             pdfView.document = pdfdocument
+            pdfView.displayMode = .singlePageContinuous
+            pdfView.sizeToFit()
+            pdfView.autoScales = true
             let file = LCFile(payload: .fileURL(fileURL: url))
             let userPhone = DataHandle.shareInstence.currentUser!.mobilePhoneNumber!.jsonString.trimmingCharacters(in: .punctuationCharacters)
             try?file.set("user", value: userPhone)

@@ -115,6 +115,7 @@
 		33B6F76F22745E8800104437 = {
 			isa = PBXGroup;
 			children = (
+				33EA3C252297D41A003780A7 /* contractPDF */,
 				331EA8282292FF4F00F52455 /* tint.pdf */,
 				33184808228F0F6F00262E1B /* VertifierCode */,
 				33184807228F0EE400262E1B /* Contact */,
@@ -141,9 +142,6 @@
 				33089BB12277114D00BEE87A /* RegisterViewController.swift */,
 				33B6F77F22745E8800104437 /* Main.storyboard */,
 				331EA8262292B0CB00F52455 /* contractViewController.swift */,
-				331EA8242292AEE900F52455 /* addNewContractViewController.swift */,
-				331EA8222292AB2E00F52455 /* pdfViewController.swift */,
-				331EA8202292A9CD00F52455 /* pdfTableViewController.swift */,
 				33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */,
 				33D3C83C228DA64C0093696A /* IdentifierViewController.swift */,
 				33089C98228C8E4200BEE87A /* MineViewController.swift */,
@@ -154,6 +152,16 @@
 				33B6F78722745E8900104437 /* Info.plist */,
 			);
 			path = myContract;
+			sourceTree = "<group>";
+		};
+		33EA3C252297D41A003780A7 /* contractPDF */ = {
+			isa = PBXGroup;
+			children = (
+				331EA8242292AEE900F52455 /* addNewContractViewController.swift */,
+				331EA8222292AB2E00F52455 /* pdfViewController.swift */,
+				331EA8202292A9CD00F52455 /* pdfTableViewController.swift */,
+			);
+			path = contractPDF;
 			sourceTree = "<group>";
 		};
 		9C59195378546A8792B292D0 /* Frameworks */ = {
