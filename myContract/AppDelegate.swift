@@ -62,7 +62,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             string.replaceOccurrences(of: "file://", with: "", options: NSString.CompareOptions.caseInsensitive, range: NSMakeRange(0, path.count))
         }
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "pdf"), object: string)
-        return true
+//        return true
+        return TencentOAuth.handleOpen(url)
     }
 
 

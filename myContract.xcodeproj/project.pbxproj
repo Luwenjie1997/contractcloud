@@ -35,6 +35,9 @@
 		33D3C83F228DF4DC0093696A /* IdentifierHavenSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */; };
 		33EA3C4122985375003780A7 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA3C4022985375003780A7 /* YPDrawSignatureView.swift */; };
 		33EA3C4522985403003780A7 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA3C4422985403003780A7 /* SignatureViewController.swift */; };
+		33EA3C6E229873AE003780A7 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EA3C6D229873AE003780A7 /* TencentOpenAPI.framework */; };
+		33EA3C712298742B003780A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EA3C702298742B003780A7 /* SystemConfiguration.framework */; };
+		33EA3C7822987650003780A7 /* signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EA3C7722987650003780A7 /* signature.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,11 @@
 		33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierHavenSetViewController.swift; sourceTree = "<group>"; };
 		33EA3C4022985375003780A7 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
 		33EA3C4422985403003780A7 /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		33EA3C6D229873AE003780A7 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = "../../../Downloads/open_sdk_for_lite_V3.3.3-2.0_svn35045_#34_201805231028/TencentOpenAPI.framework"; sourceTree = "<group>"; };
+		33EA3C6F229873B5003780A7 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		33EA3C702298742B003780A7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		33EA3C7622987650003780A7 /* myContract-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myContract-Bridging-Header.h"; sourceTree = "<group>"; };
+		33EA3C7722987650003780A7 /* signature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = signature.m; sourceTree = "<group>"; };
 		5A9DD948D8D4585453B55726 /* Pods-myContract.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myContract.release.xcconfig"; path = "Target Support Files/Pods-myContract/Pods-myContract.release.xcconfig"; sourceTree = "<group>"; };
 		9DDA6CEE713CD0E6D7BB3CBE /* Pods_myContract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myContract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,7 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EA3C712298742B003780A7 /* SystemConfiguration.framework in Frameworks */,
 				2C1525F0FDD0408034CA13C2 /* Pods_myContract.framework in Frameworks */,
+				33EA3C6E229873AE003780A7 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +129,7 @@
 		33B6F76F22745E8800104437 = {
 			isa = PBXGroup;
 			children = (
+				33EA3C6D229873AE003780A7 /* TencentOpenAPI.framework */,
 				33EA3C43229853DF003780A7 /* signature */,
 				33EA3C252297D41A003780A7 /* contractPDF */,
 				331EA8282292FF4F00F52455 /* tint.pdf */,
@@ -155,6 +166,8 @@
 				33B6F78222745E8900104437 /* Assets.xcassets */,
 				33B6F78422745E8900104437 /* LaunchScreen.storyboard */,
 				33B6F78722745E8900104437 /* Info.plist */,
+				33EA3C7722987650003780A7 /* signature.m */,
+				33EA3C7622987650003780A7 /* myContract-Bridging-Header.h */,
 			);
 			path = myContract;
 			sourceTree = "<group>";
@@ -181,6 +194,8 @@
 		9C59195378546A8792B292D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33EA3C702298742B003780A7 /* SystemConfiguration.framework */,
+				33EA3C6F229873B5003780A7 /* TencentOpenAPI.framework */,
 				9DDA6CEE713CD0E6D7BB3CBE /* Pods_myContract.framework */,
 			);
 			name = Frameworks;
@@ -220,6 +235,7 @@
 				TargetAttributes = {
 					33B6F77722745E8800104437 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -314,6 +330,7 @@
 				33089BDE22782ACE00BEE87A /* VertificationCodeViewController.swift in Sources */,
 				331EA8232292AB2E00F52455 /* pdfViewController.swift in Sources */,
 				33184814228F13B500262E1B /* CreateContactViewController.swift in Sources */,
+				33EA3C7822987650003780A7 /* signature.m in Sources */,
 				33089BDC22782A7200BEE87A /* AsunBasicAttributes.swift in Sources */,
 				33EA3C4522985403003780A7 /* SignatureViewController.swift in Sources */,
 				33B6F77E22745E8800104437 /* LoginViewController.swift in Sources */,
@@ -478,8 +495,15 @@
 			baseConfigurationReference = 2A257B8E25F6993953D7D1A1 /* Pods-myContract.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28K646WPV7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LeanCloud\"",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = myContract/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,6 +511,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lu.myContract;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "myContract/myContract-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -497,8 +523,15 @@
 			baseConfigurationReference = 5A9DD948D8D4585453B55726 /* Pods-myContract.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28K646WPV7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LeanCloud\"",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = myContract/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,6 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lu.myContract;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "myContract/myContract-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -14,7 +14,6 @@ import PDFKit
 class ImageStampAnnotation: PDFAnnotation {
     
     var image: UIImage!
-    
     // A custom init that sets the type to Stamp on default and assigns our Image variable
     init(with image: UIImage!, forBounds bounds: CGRect, withProperties properties: [AnyHashable : Any]?) {
         super.init(bounds: bounds, forType: PDFAnnotationSubtype.stamp, withProperties: properties)
@@ -40,13 +39,16 @@ class ImageStampAnnotation: PDFAnnotation {
 
 class addNewContractViewController: UIViewController {
 
+    var _tencentOAuth:TencentOAuth!
     var signatureImage :UIImage?
+    var myFile :LCFile?
     var currentlySelectedAnnotation: PDFAnnotation?
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var titleOfAdd: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        _tencentOAuth = TencentOAuth.init(appId: "1105212016", andDelegate: nil)
         self.tabBarController?.tabBar.isHidden = true
         titleOfAdd.text = "本地文件导入"
         // Do any additional setup after loading the view.
@@ -70,7 +72,6 @@ class addNewContractViewController: UIViewController {
 
     @IBOutlet weak var pdfView: PDFView!
     @objc func notify(_ notification :Notification){
-        print("call")
         let str = notification.object
         print(str)
         let url = URL(fileURLWithPath: str as! String)
@@ -85,6 +86,7 @@ class addNewContractViewController: UIViewController {
             let panAnnotationGesture = UIPanGestureRecognizer(target: self, action: #selector(didPanAnnotation(sender:)))
             pdfView.addGestureRecognizer(panAnnotationGesture)
             let file = LCFile(payload: .fileURL(fileURL: url))
+            myFile = file
             let userPhone = DataHandle.shareInstence.currentUser!.mobilePhoneNumber!.jsonString.trimmingCharacters(in: .punctuationCharacters)
             try?file.set("user", value: userPhone)
             //Isigned代表我是否签名，heSign代表对方是否签名，0是未签，1是已签
@@ -103,10 +105,24 @@ class addNewContractViewController: UIViewController {
                         break
                     }
             })
+            
         }
     }
 
     @IBAction func send(_ sender: Any) {
+        if let url = myFile?.url?.jsonString{
+            print(url.trimmingCharacters(in: .punctuationCharacters))
+            let newsUrl = URL(string: url.trimmingCharacters(in: .punctuationCharacters))
+            let title = "合同标题"
+            let description = "合同描述"
+            let newsObj = QQApiNewsObject(url: newsUrl, title: title, description: description,
+                                          previewImageURL: nil,
+                                          targetContentType: QQApiURLTargetTypeNews)
+            let req = SendMessageToQQReq(content: newsObj)
+            print(newsObj)
+            print(req)
+            QQApiInterface.send(req)
+        }
         
     }
     
