@@ -39,12 +39,7 @@ class LoginViewController: UIViewController {
         LCUser.logIn(mobilePhoneNumber: phoneNumber, password: password){result in
             switch result{
             case .success(let user):
-//                let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainInterface")
-//                self.navigationController?.pushViewController(vc!, animated: true)
-//                break
                 let sb = UIStoryboard(name: "Main", bundle: nil)
-//                let vc = sb.instantiateViewController(withIdentifier: "tabBarController")
-//                self.present(vc, animated: true, completion: nil)
                 var vc :MainInterfaceViewController!
                 vc = sb.instantiateViewController(withIdentifier: "tabBarController") as! MainInterfaceViewController
 //                vc.MainUser = user
@@ -60,15 +55,6 @@ class LoginViewController: UIViewController {
                 break
 
             }
-//            if (result.error != nil) {
-////                print(result.error)
-//                let alert = UIAlertController(title: result.error?.failureReason, message: "请重新输入", preferredStyle: .alert)
-//                let action = UIAlertAction(title: "确定", style: .default, handler: nil)
-//                alert.addAction(action)
-//                self.present(alert, animated: true, completion: nil)
-//            }else{
-//
-//            }
         }
         
     }

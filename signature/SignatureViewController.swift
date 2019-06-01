@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol signatureDelegate {
+    func changeImage(image :UIImage)
+}
+
 class SignatureViewController: UIViewController,YPSignatureDelegate {
     
     @IBOutlet weak var signature: YPDrawSignatureView!
+    var delegate :signatureDelegate?
     var image : UIImage?
     var previousViewController: UIViewController?
     override func viewDidLoad() {
@@ -22,10 +27,13 @@ class SignatureViewController: UIViewController,YPSignatureDelegate {
     @IBAction func save(_ sender: Any) {
         image = self.signature.getSignature()
         print(image)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let VC = storyboard.instantiateViewController(withIdentifier: "newContractStoryboard") as? addNewContractViewController
-        VC?.signatureImage = image!
-        self.navigationController?.pushViewController(VC!, animated: true)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let VC = storyboard.instantiateViewController(withIdentifier: "newContractStoryboard") as? addNewContractViewController
+//        VC?.signatureImage = image!
+//        self.navigationController?.pushViewController(VC!, animated: true)
+        delegate?.changeImage(image: image!)
+        self.navigationController?.popViewController(animated: true)
+        
     }
     
     @IBAction func clear(_ sender: Any) {

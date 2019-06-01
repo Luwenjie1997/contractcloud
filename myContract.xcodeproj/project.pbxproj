@@ -25,6 +25,28 @@
 		331EA8252292AEE900F52455 /* addNewContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EA8242292AEE900F52455 /* addNewContractViewController.swift */; };
 		331EA8272292B0CB00F52455 /* contractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EA8262292B0CB00F52455 /* contractViewController.swift */; };
 		331EA8292292FF4F00F52455 /* tint.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 331EA8282292FF4F00F52455 /* tint.pdf */; };
+		33857804229ACDC8005CC2D8 /* UIAlertController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857801229ACDC8005CC2D8 /* UIAlertController+Extend.m */; };
+		33857805229ACDC8005CC2D8 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857802229ACDC8005CC2D8 /* UIImage+Extend.m */; };
+		33857809229ACDD1005CC2D8 /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857808229ACDD1005CC2D8 /* RectManager.m */; };
+		33857810229ACDD7005CC2D8 /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3385780B229ACDD7005CC2D8 /* libexidcardios.a */; };
+		33857811229ACDD7005CC2D8 /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = 3385780D229ACDD7005CC2D8 /* zocr0.lib */; };
+		33857825229ACDE3005CC2D8 /* IDInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33857814229ACDE3005CC2D8 /* IDInfoViewController.xib */; };
+		33857826229ACDE3005CC2D8 /* IDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857815229ACDE3005CC2D8 /* IDInfoViewController.m */; };
+		33857827229ACDE3005CC2D8 /* AVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857816229ACDE3005CC2D8 /* AVCaptureViewController.m */; };
+		33857828229ACDE3005CC2D8 /* JQAVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857817229ACDE3005CC2D8 /* JQAVCaptureViewController.m */; };
+		33857829229ACDE3005CC2D8 /* IDAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857818229ACDE3005CC2D8 /* IDAuthViewController.m */; };
+		3385782A229ACDE3005CC2D8 /* IDAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33857819229ACDE3005CC2D8 /* IDAuthViewController.xib */; };
+		3385782B229ACDE3005CC2D8 /* IDInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3385781E229ACDE3005CC2D8 /* IDInfo.m */; };
+		3385782C229ACDE3005CC2D8 /* JQIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857821229ACDE3005CC2D8 /* JQIDCardScaningView.m */; };
+		3385782D229ACDE3005CC2D8 /* LHSIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857822229ACDE3005CC2D8 /* LHSIDCardScaningView.m */; };
+		3385782F229ACDEE005CC2D8 /* Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = 3385782E229ACDEE005CC2D8 /* Emblem.png */; };
+		33857831229ACDF6005CC2D8 /* idcard_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 33857830229ACDF6005CC2D8 /* idcard_back.png */; };
+		33857833229ACDFD005CC2D8 /* idcard_first_head_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 33857832229ACDFD005CC2D8 /* idcard_first_head_5.png */; };
+		33857835229ACE06005CC2D8 /* idcard_first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33857834229ACE05005CC2D8 /* idcard_first@2x.png */; };
+		33857837229ACE10005CC2D8 /* navigationbar_backdown_bg.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 33857836229ACE10005CC2D8 /* navigationbar_backdown_bg.pdf */; };
+		33857839229ACE17005CC2D8 /* nav_torch_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 33857838229ACE17005CC2D8 /* nav_torch_off.png */; };
+		3385783B229ACE1E005CC2D8 /* nav_torch_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3385783A229ACE1E005CC2D8 /* nav_torch_on.png */; };
+		3385783D229ACF17005CC2D8 /* identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385783C229ACF17005CC2D8 /* identity.swift */; };
 		33B6F77C22745E8800104437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6F77B22745E8800104437 /* AppDelegate.swift */; };
 		33B6F77E22745E8800104437 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6F77D22745E8800104437 /* LoginViewController.swift */; };
 		33B6F78122745E8800104437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B6F77F22745E8800104437 /* Main.storyboard */; };
@@ -59,6 +81,40 @@
 		331EA8242292AEE900F52455 /* addNewContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewContractViewController.swift; sourceTree = "<group>"; };
 		331EA8262292B0CB00F52455 /* contractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractViewController.swift; sourceTree = "<group>"; };
 		331EA8282292FF4F00F52455 /* tint.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tint.pdf; sourceTree = "<group>"; };
+		33857800229ACDC8005CC2D8 /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		33857801229ACDC8005CC2D8 /* UIAlertController+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Extend.m"; sourceTree = "<group>"; };
+		33857802229ACDC8005CC2D8 /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		33857803229ACDC8005CC2D8 /* UIAlertController+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Extend.h"; sourceTree = "<group>"; };
+		33857807229ACDD1005CC2D8 /* RectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectManager.h; sourceTree = "<group>"; };
+		33857808229ACDD1005CC2D8 /* RectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectManager.m; sourceTree = "<group>"; };
+		3385780B229ACDD7005CC2D8 /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
+		3385780D229ACDD7005CC2D8 /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		3385780E229ACDD7005CC2D8 /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		3385780F229ACDD7005CC2D8 /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
+		33857813229ACDE3005CC2D8 /* IDAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAuthViewController.h; sourceTree = "<group>"; };
+		33857814229ACDE3005CC2D8 /* IDInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDInfoViewController.xib; sourceTree = "<group>"; };
+		33857815229ACDE3005CC2D8 /* IDInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDInfoViewController.m; sourceTree = "<group>"; };
+		33857816229ACDE3005CC2D8 /* AVCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureViewController.m; sourceTree = "<group>"; };
+		33857817229ACDE3005CC2D8 /* JQAVCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQAVCaptureViewController.m; sourceTree = "<group>"; };
+		33857818229ACDE3005CC2D8 /* IDAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAuthViewController.m; sourceTree = "<group>"; };
+		33857819229ACDE3005CC2D8 /* IDAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDAuthViewController.xib; sourceTree = "<group>"; };
+		3385781A229ACDE3005CC2D8 /* AVCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureViewController.h; sourceTree = "<group>"; };
+		3385781B229ACDE3005CC2D8 /* IDInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDInfoViewController.h; sourceTree = "<group>"; };
+		3385781C229ACDE3005CC2D8 /* JQAVCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQAVCaptureViewController.h; sourceTree = "<group>"; };
+		3385781E229ACDE3005CC2D8 /* IDInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDInfo.m; sourceTree = "<group>"; };
+		3385781F229ACDE3005CC2D8 /* IDInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDInfo.h; sourceTree = "<group>"; };
+		33857821229ACDE3005CC2D8 /* JQIDCardScaningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQIDCardScaningView.m; sourceTree = "<group>"; };
+		33857822229ACDE3005CC2D8 /* LHSIDCardScaningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHSIDCardScaningView.m; sourceTree = "<group>"; };
+		33857823229ACDE3005CC2D8 /* JQIDCardScaningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQIDCardScaningView.h; sourceTree = "<group>"; };
+		33857824229ACDE3005CC2D8 /* LHSIDCardScaningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSIDCardScaningView.h; sourceTree = "<group>"; };
+		3385782E229ACDEE005CC2D8 /* Emblem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emblem.png; sourceTree = "<group>"; };
+		33857830229ACDF6005CC2D8 /* idcard_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idcard_back.png; sourceTree = "<group>"; };
+		33857832229ACDFD005CC2D8 /* idcard_first_head_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idcard_first_head_5.png; sourceTree = "<group>"; };
+		33857834229ACE05005CC2D8 /* idcard_first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idcard_first@2x.png"; sourceTree = "<group>"; };
+		33857836229ACE10005CC2D8 /* navigationbar_backdown_bg.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = navigationbar_backdown_bg.pdf; sourceTree = "<group>"; };
+		33857838229ACE17005CC2D8 /* nav_torch_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_torch_off.png; sourceTree = "<group>"; };
+		3385783A229ACE1E005CC2D8 /* nav_torch_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_torch_on.png; sourceTree = "<group>"; };
+		3385783C229ACF17005CC2D8 /* identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = identity.swift; sourceTree = "<group>"; };
 		33B6F77822745E8800104437 /* myContract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myContract.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B6F77B22745E8800104437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33B6F77D22745E8800104437 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33EA3C712298742B003780A7 /* SystemConfiguration.framework in Frameworks */,
+				33857810229ACDD7005CC2D8 /* libexidcardios.a in Frameworks */,
 				2C1525F0FDD0408034CA13C2 /* Pods_myContract.framework in Frameworks */,
 				33EA3C6E229873AE003780A7 /* TencentOpenAPI.framework in Frameworks */,
 			);
@@ -126,9 +183,107 @@
 			path = VertifierCode;
 			sourceTree = "<group>";
 		};
+		338577FE229ACDB9005CC2D8 /* identifier */ = {
+			isa = PBXGroup;
+			children = (
+				3385783A229ACE1E005CC2D8 /* nav_torch_on.png */,
+				33857838229ACE17005CC2D8 /* nav_torch_off.png */,
+				33857836229ACE10005CC2D8 /* navigationbar_backdown_bg.pdf */,
+				33857834229ACE05005CC2D8 /* idcard_first@2x.png */,
+				33857832229ACDFD005CC2D8 /* idcard_first_head_5.png */,
+				33857830229ACDF6005CC2D8 /* idcard_back.png */,
+				3385782E229ACDEE005CC2D8 /* Emblem.png */,
+				33857812229ACDE3005CC2D8 /* Controller */,
+				3385781D229ACDE3005CC2D8 /* Model */,
+				33857820229ACDE3005CC2D8 /* View */,
+				3385780A229ACDD7005CC2D8 /* libexidcard */,
+				33857806229ACDD1005CC2D8 /* Tool */,
+				338577FF229ACDC8005CC2D8 /* Category */,
+				3385783C229ACF17005CC2D8 /* identity.swift */,
+			);
+			path = identifier;
+			sourceTree = "<group>";
+		};
+		338577FF229ACDC8005CC2D8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				33857800229ACDC8005CC2D8 /* UIImage+Extend.h */,
+				33857801229ACDC8005CC2D8 /* UIAlertController+Extend.m */,
+				33857802229ACDC8005CC2D8 /* UIImage+Extend.m */,
+				33857803229ACDC8005CC2D8 /* UIAlertController+Extend.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		33857806229ACDD1005CC2D8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				33857807229ACDD1005CC2D8 /* RectManager.h */,
+				33857808229ACDD1005CC2D8 /* RectManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		3385780A229ACDD7005CC2D8 /* libexidcard */ = {
+			isa = PBXGroup;
+			children = (
+				3385780B229ACDD7005CC2D8 /* libexidcardios.a */,
+				3385780C229ACDD7005CC2D8 /* dicts */,
+				3385780E229ACDD7005CC2D8 /* commondef.h */,
+				3385780F229ACDD7005CC2D8 /* excards.h */,
+			);
+			path = libexidcard;
+			sourceTree = "<group>";
+		};
+		3385780C229ACDD7005CC2D8 /* dicts */ = {
+			isa = PBXGroup;
+			children = (
+				3385780D229ACDD7005CC2D8 /* zocr0.lib */,
+			);
+			path = dicts;
+			sourceTree = "<group>";
+		};
+		33857812229ACDE3005CC2D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33857813229ACDE3005CC2D8 /* IDAuthViewController.h */,
+				33857814229ACDE3005CC2D8 /* IDInfoViewController.xib */,
+				33857815229ACDE3005CC2D8 /* IDInfoViewController.m */,
+				33857816229ACDE3005CC2D8 /* AVCaptureViewController.m */,
+				33857817229ACDE3005CC2D8 /* JQAVCaptureViewController.m */,
+				33857818229ACDE3005CC2D8 /* IDAuthViewController.m */,
+				33857819229ACDE3005CC2D8 /* IDAuthViewController.xib */,
+				3385781A229ACDE3005CC2D8 /* AVCaptureViewController.h */,
+				3385781B229ACDE3005CC2D8 /* IDInfoViewController.h */,
+				3385781C229ACDE3005CC2D8 /* JQAVCaptureViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3385781D229ACDE3005CC2D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3385781E229ACDE3005CC2D8 /* IDInfo.m */,
+				3385781F229ACDE3005CC2D8 /* IDInfo.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33857820229ACDE3005CC2D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33857821229ACDE3005CC2D8 /* JQIDCardScaningView.m */,
+				33857822229ACDE3005CC2D8 /* LHSIDCardScaningView.m */,
+				33857823229ACDE3005CC2D8 /* JQIDCardScaningView.h */,
+				33857824229ACDE3005CC2D8 /* LHSIDCardScaningView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		33B6F76F22745E8800104437 = {
 			isa = PBXGroup;
 			children = (
+				338577FE229ACDB9005CC2D8 /* identifier */,
 				33EA3C6D229873AE003780A7 /* TencentOpenAPI.framework */,
 				33EA3C43229853DF003780A7 /* signature */,
 				33EA3C252297D41A003780A7 /* contractPDF */,
@@ -262,11 +417,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33857839229ACE17005CC2D8 /* nav_torch_off.png in Resources */,
+				33857833229ACDFD005CC2D8 /* idcard_first_head_5.png in Resources */,
 				33184810228F130700262E1B /* ContactTableViewCell.xib in Resources */,
 				33B6F78622745E8900104437 /* LaunchScreen.storyboard in Resources */,
+				3385783B229ACE1E005CC2D8 /* nav_torch_on.png in Resources */,
 				33B6F78322745E8900104437 /* Assets.xcassets in Resources */,
 				33B6F78122745E8800104437 /* Main.storyboard in Resources */,
+				3385782F229ACDEE005CC2D8 /* Emblem.png in Resources */,
+				33857837229ACE10005CC2D8 /* navigationbar_backdown_bg.pdf in Resources */,
+				33857835229ACE06005CC2D8 /* idcard_first@2x.png in Resources */,
+				33857831229ACDF6005CC2D8 /* idcard_back.png in Resources */,
+				33857811229ACDD7005CC2D8 /* zocr0.lib in Resources */,
 				331EA8292292FF4F00F52455 /* tint.pdf in Resources */,
+				33857825229ACDE3005CC2D8 /* IDInfoViewController.xib in Resources */,
+				3385782A229ACDE3005CC2D8 /* IDAuthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,23 +497,34 @@
 				33184814228F13B500262E1B /* CreateContactViewController.swift in Sources */,
 				33EA3C7822987650003780A7 /* signature.m in Sources */,
 				33089BDC22782A7200BEE87A /* AsunBasicAttributes.swift in Sources */,
+				33857827229ACDE3005CC2D8 /* AVCaptureViewController.m in Sources */,
 				33EA3C4522985403003780A7 /* SignatureViewController.swift in Sources */,
 				33B6F77E22745E8800104437 /* LoginViewController.swift in Sources */,
 				331EA8252292AEE900F52455 /* addNewContractViewController.swift in Sources */,
+				33857809229ACDD1005CC2D8 /* RectManager.m in Sources */,
 				33089C99228C8E4200BEE87A /* MineViewController.swift in Sources */,
+				33857804229ACDC8005CC2D8 /* UIAlertController+Extend.m in Sources */,
 				3318480F228F130700262E1B /* ContactTableViewCell.swift in Sources */,
 				33089C95228C5E2900BEE87A /* MainInterfaceViewController.swift in Sources */,
 				331EA8212292A9CD00F52455 /* pdfTableViewController.swift in Sources */,
+				3385782C229ACDE3005CC2D8 /* JQIDCardScaningView.m in Sources */,
 				33B6F77C22745E8800104437 /* AppDelegate.swift in Sources */,
 				33D3C83F228DF4DC0093696A /* IdentifierHavenSetViewController.swift in Sources */,
 				33D3C83D228DA64C0093696A /* IdentifierViewController.swift in Sources */,
+				33857805229ACDC8005CC2D8 /* UIImage+Extend.m in Sources */,
 				33D3C815228D3C6A0093696A /* DataHandle.swift in Sources */,
 				33089BDA227829EF00BEE87A /* CodeView.swift in Sources */,
 				3318480C228F12C100262E1B /* UIViewController+Alerts.swift in Sources */,
 				33EA3C4122985375003780A7 /* YPDrawSignatureView.swift in Sources */,
 				33089BB22277114D00BEE87A /* RegisterViewController.swift in Sources */,
 				3318480A228F127800262E1B /* ContactEntry.swift in Sources */,
+				3385782D229ACDE3005CC2D8 /* LHSIDCardScaningView.m in Sources */,
 				33184812228F138900262E1B /* ContactViewController.swift in Sources */,
+				33857826229ACDE3005CC2D8 /* IDInfoViewController.m in Sources */,
+				33857828229ACDE3005CC2D8 /* JQAVCaptureViewController.m in Sources */,
+				3385782B229ACDE3005CC2D8 /* IDInfo.m in Sources */,
+				33857829229ACDE3005CC2D8 /* IDAuthViewController.m in Sources */,
+				3385783D229ACF17005CC2D8 /* identity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +673,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 28K646WPV7;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
@@ -508,6 +686,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/identifier/libexidcard",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lu.myContract;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,7 +707,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 28K646WPV7;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
@@ -536,6 +720,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/identifier/libexidcard",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lu.myContract;
 				PRODUCT_NAME = "$(TARGET_NAME)";

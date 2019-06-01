@@ -56,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
         let path = url.absoluteString
         let string = NSMutableString.init(string: path)
         if path.hasPrefix("file://"){
@@ -68,4 +69,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 

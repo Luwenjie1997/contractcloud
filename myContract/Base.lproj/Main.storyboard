@@ -456,21 +456,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yqJ-qA-Rwt">
-                                <rect key="frame" x="37" y="188" width="340" height="60"/>
+                                <rect key="frame" x="37" y="188" width="340" height="48"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="jY4-6d-Cql">
-                                        <rect key="frame" x="0.0" y="0.0" width="340" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="48"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZG-lM-vS5">
-                                                <rect key="frame" x="0.0" y="0.0" width="161" height="60"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZG-lM-vS5">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="个人注册">
                                                     <color key="titleColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xH-Ia-nej">
-                                                <rect key="frame" x="179" y="0.0" width="161" height="60"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xH-Ia-nej">
+                                                <rect key="frame" x="218" y="0.0" width="122" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="企业注册">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -480,7 +480,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="OrR-dt-NSi">
-                                <rect key="frame" x="20" y="318" width="374" height="190"/>
+                                <rect key="frame" x="20" y="306" width="374" height="190"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号码" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ei-qh-dHQ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -978,7 +978,7 @@
         <!--Signature View Controller-->
         <scene sceneID="TWV-cp-Srq">
             <objects>
-                <viewController id="YN5-ne-hY6" customClass="SignatureViewController" customModule="Helloworld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YN5-ne-hY6" customClass="SignatureViewController" customModule="myContract" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bDe-tp-9O3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -990,7 +990,7 @@
                                     <navigationItem title="Title" id="o75-eN-4lK"/>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Okx-fM-krx" customClass="YPDrawSignatureView" customModule="Helloworld" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Okx-fM-krx" customClass="YPDrawSignatureView" customModule="myContract" customModuleProvider="target">
                                 <rect key="frame" x="16" y="207" width="343" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>

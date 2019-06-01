@@ -6,4 +6,4 @@
 #import <TencentOpenAPI/QQApiinterface.h>
 #import <TencentOpenAPI/QQApiInterfaceObject.h>
 #import <TencentOpenAPI/sdkdef.h>
-
+#import "IDAuthViewController.h"

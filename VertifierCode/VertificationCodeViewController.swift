@@ -30,7 +30,7 @@ class VertificationCodeViewController: UIViewController {
         code.Base.changeInputNum(num: 6)
         
         
-        //To obtain Input Text
+        //核对验证码
         code.callBacktext = { str in
             if let result = LCUser.verifyMobilePhoneNumber(self.phonenumber!, verificationCode: str).error {
                 print(result)
@@ -40,12 +40,6 @@ class VertificationCodeViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 code.clearnText(error: "error")
             }else{
-                
-//                let loginViewController = LoginViewController()
-////                self.navigationController?.popToViewController(loginViewController, animated: true)
-//                self.present(loginViewController, animated: true, completion: nil)
-//                self.presentingViewController?.dismiss(animated: true, completion: nil)
-//                self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
                 let alert = UIAlertController(title: "注册成功", message: "界面将自动跳转至登陆界面", preferredStyle: .alert)
                 let action = UIAlertAction(title: "确定", style: .default, handler: {action in
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)

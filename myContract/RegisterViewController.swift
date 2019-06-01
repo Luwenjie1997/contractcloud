@@ -55,9 +55,7 @@ class RegisterViewController: UIViewController {
                 if let result = user.signUp().error{
                     self.showDetail(first: "注册失败", second: result.reason ?? "ok")
                 }else{
-//                    let vertifyViewController = VertificationCodeViewController()
-//                    vertifyViewController.phonenumber = phoneNumber
-//                    self.navigationController?.pushViewController(vertifyViewController, animated: true)
+                    print("注册成功")
                 }
             }else{
                 self.showDetail(first: "密码无效", second: "6-8位字母和数字组合")

@@ -46,9 +46,9 @@ class MineViewController: UIViewController {
             let VC = storyboard.instantiateViewController(withIdentifier: "IdentifierHavenSet") as? IdentifierHavenSetViewController
             self.navigationController?.pushViewController(VC!, animated: true)
         }else{
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let VC = storyboard.instantiateViewController(withIdentifier: "IdentifierNotSet") as? IdentifierViewController
-            self.navigationController?.pushViewController(VC!, animated: true)
+            self.tabBarController?.tabBar.isHidden = true
+            let vc = IDAuthViewController.init()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
     }

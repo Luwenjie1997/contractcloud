@@ -37,7 +37,11 @@ class ImageStampAnnotation: PDFAnnotation {
     }
 }
 
-class addNewContractViewController: UIViewController {
+class addNewContractViewController: UIViewController , signatureDelegate {
+    func changeImage(image: UIImage) {
+        self.signatureImage = image
+    }
+    
 
     var _tencentOAuth:TencentOAuth!
     var signatureImage :UIImage?
@@ -167,7 +171,7 @@ class addNewContractViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showSignatureSegue" {
             if let nextVC = segue.destination as? SignatureViewController {
-                nextVC.previousViewController = self
+                nextVC.delegate = self
             }
         }
     }
