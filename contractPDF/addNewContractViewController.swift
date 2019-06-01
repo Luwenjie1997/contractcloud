@@ -123,8 +123,6 @@ class addNewContractViewController: UIViewController , signatureDelegate {
                                           previewImageURL: nil,
                                           targetContentType: QQApiURLTargetTypeNews)
             let req = SendMessageToQQReq(content: newsObj)
-            print(newsObj)
-            print(req)
             QQApiInterface.send(req)
         }
         

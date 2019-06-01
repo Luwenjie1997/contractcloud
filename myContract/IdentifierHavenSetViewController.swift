@@ -23,6 +23,14 @@ class IdentifierHavenSetViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func changeIdentifier(_ sender: Any) {
+        self.tabBarController?.tabBar.isHidden = true
+        let vc = IDAuthViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
 
     /*
     // MARK: - Navigation

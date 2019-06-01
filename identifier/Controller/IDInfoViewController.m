@@ -78,9 +78,15 @@
     
     [identifier saveWithWithname:_IDInfo.name withid:_IDInfo.num];
     
-    [self dismissViewControllerAnimated:true completion:^{
-        NSLog(@"dismiss");
-    }];
+//    [self dismissViewControllerAnimated:true completion:^{
+//        NSLog(@"dismiss");
+//    }];
+    for (UIViewController *controller in self.navigationController.viewControllers) {
+        if ([controller isKindOfClass:[MineViewController class]]) {
+            MineViewController *mine =(MineViewController *)controller;
+            [self.navigationController popToViewController:mine animated:YES];
+        }
+    }
     NSLog(@"经用户核对，身份证号码正确，那就进行下一步，比如身份证图像或号码经加密后，传递给后台");
 }
 
