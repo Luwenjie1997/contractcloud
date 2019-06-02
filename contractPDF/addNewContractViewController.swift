@@ -86,6 +86,7 @@ class addNewContractViewController: UIViewController , signatureDelegate {
             pdfView.autoScales = true
             button1.isHidden = false
             button2.isHidden = false
+            titleOfAdd.isHidden = true
             pdfView.backgroundColor = UIColor.lightGray
             let panAnnotationGesture = UIPanGestureRecognizer(target: self, action: #selector(didPanAnnotation(sender:)))
             pdfView.addGestureRecognizer(panAnnotationGesture)

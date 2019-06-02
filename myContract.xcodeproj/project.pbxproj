@@ -25,6 +25,7 @@
 		331EA8252292AEE900F52455 /* addNewContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EA8242292AEE900F52455 /* addNewContractViewController.swift */; };
 		331EA8272292B0CB00F52455 /* contractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EA8262292B0CB00F52455 /* contractViewController.swift */; };
 		331EA8292292FF4F00F52455 /* tint.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 331EA8282292FF4F00F52455 /* tint.pdf */; };
+		332F73AE22A43E4300BEE46F /* deviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332F73AD22A43E4300BEE46F /* deviceViewController.swift */; };
 		33857804229ACDC8005CC2D8 /* UIAlertController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857801229ACDC8005CC2D8 /* UIAlertController+Extend.m */; };
 		33857805229ACDC8005CC2D8 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857802229ACDC8005CC2D8 /* UIImage+Extend.m */; };
 		33857809229ACDD1005CC2D8 /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33857808229ACDD1005CC2D8 /* RectManager.m */; };
@@ -81,6 +82,7 @@
 		331EA8242292AEE900F52455 /* addNewContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewContractViewController.swift; sourceTree = "<group>"; };
 		331EA8262292B0CB00F52455 /* contractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractViewController.swift; sourceTree = "<group>"; };
 		331EA8282292FF4F00F52455 /* tint.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tint.pdf; sourceTree = "<group>"; };
+		332F73AD22A43E4300BEE46F /* deviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deviceViewController.swift; sourceTree = "<group>"; };
 		33857800229ACDC8005CC2D8 /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
 		33857801229ACDC8005CC2D8 /* UIAlertController+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Extend.m"; sourceTree = "<group>"; };
 		33857802229ACDC8005CC2D8 /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				33B6F77D22745E8800104437 /* LoginViewController.swift */,
 				33089BB12277114D00BEE87A /* RegisterViewController.swift */,
 				33B6F77F22745E8800104437 /* Main.storyboard */,
+				332F73AD22A43E4300BEE46F /* deviceViewController.swift */,
 				331EA8262292B0CB00F52455 /* contractViewController.swift */,
 				33D3C83E228DF4DC0093696A /* IdentifierHavenSetViewController.swift */,
 				33D3C83C228DA64C0093696A /* IdentifierViewController.swift */,
@@ -519,6 +522,7 @@
 				33089BB22277114D00BEE87A /* RegisterViewController.swift in Sources */,
 				3318480A228F127800262E1B /* ContactEntry.swift in Sources */,
 				3385782D229ACDE3005CC2D8 /* LHSIDCardScaningView.m in Sources */,
+				332F73AE22A43E4300BEE46F /* deviceViewController.swift in Sources */,
 				33184812228F138900262E1B /* ContactViewController.swift in Sources */,
 				33857826229ACDE3005CC2D8 /* IDInfoViewController.m in Sources */,
 				33857828229ACDE3005CC2D8 /* JQAVCaptureViewController.m in Sources */,
