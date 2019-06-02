@@ -46,9 +46,11 @@ class addNewContractViewController: UIViewController , signatureDelegate {
     var _tencentOAuth:TencentOAuth!
     var signatureImage :UIImage?
     var myFile :LCFile?
+    var myURL :URL?
     var currentlySelectedAnnotation: PDFAnnotation?
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var titleOfAdd: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +67,7 @@ class addNewContractViewController: UIViewController , signatureDelegate {
                 pdfView.autoScales = true
                 button1.isHidden = true
                 button2.isHidden = true
+                button3.isHidden = true
                 let panAnnotationGesture = UIPanGestureRecognizer(target: self, action: #selector(didPanAnnotation(sender:)))
                 pdfView.addGestureRecognizer(panAnnotationGesture)
                 
@@ -86,34 +89,56 @@ class addNewContractViewController: UIViewController , signatureDelegate {
             pdfView.autoScales = true
             button1.isHidden = false
             button2.isHidden = false
+            button3.isHidden = false
             titleOfAdd.isHidden = true
             pdfView.backgroundColor = UIColor.lightGray
             let panAnnotationGesture = UIPanGestureRecognizer(target: self, action: #selector(didPanAnnotation(sender:)))
             pdfView.addGestureRecognizer(panAnnotationGesture)
-            let file = LCFile(payload: .fileURL(fileURL: url))
-            myFile = file
-            let userPhone = DataHandle.shareInstence.currentUser!.mobilePhoneNumber!.jsonString.trimmingCharacters(in: .punctuationCharacters)
-            try?file.set("user", value: userPhone)
-            //Isigned代表我是否签名，heSign代表对方是否签名，0是未签，1是已签
-            try?file.set("iSigne", value: 1)
-            try?file.set("heSign", value: 0)
-            file.save(
-                progress: { progress in
-                    print(progress)
-            },
-                completion: { result in
-                    switch result {
-                    case .success:
-                        break
-                    case .failure(let error):
-                        print(error.reason ?? "")
-                        break
-                    }
-            })
-            
         }
     }
-
+    
+    func upload(url :URL) {
+        let file = LCFile(payload: .fileURL(fileURL: url))
+        myFile = file
+        let userPhone = DataHandle.shareInstence.currentUser!.mobilePhoneNumber!.jsonString.trimmingCharacters(in: .punctuationCharacters)
+        try?file.set("user", value: userPhone)
+        //Isigned代表我是否签名，heSign代表对方是否签名，0是未签，1是已签
+        try?file.set("iSigne", value: 1)
+        try?file.set("heSign", value: 0)
+        file.save(
+            progress: { progress in
+                print(progress)
+        },
+            completion: { result in
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
+                    print(error.reason ?? "")
+                    break
+                }
+        })
+    }
+    
+    
+    @IBAction func save(_ sender: Any) {
+//        let myDire: String = NSHomeDirectory() + "/Documents/Rookie/Files"
+//        let fileManager = FileManager.default
+//        try! fileManager.createDirectory(atPath: myDire,withIntermediateDirectories: true, attributes: nil)
+        let path: String = NSHomeDirectory() + "/Documents/Rookie/Files"
+        if let result = pdfView.document?.write(toFile: path){
+            print(result)
+            if result{
+                let url = URL(fileURLWithPath: path)
+                myURL = url
+                print(url)
+                upload(url: url)
+            }else{
+                print("fuck write")
+            }
+        }
+    }
+    
     @IBAction func send(_ sender: Any) {
         if let url = myFile?.url?.jsonString{
             print(url.trimmingCharacters(in: .punctuationCharacters))
@@ -126,7 +151,6 @@ class addNewContractViewController: UIViewController , signatureDelegate {
             let req = SendMessageToQQReq(content: newsObj)
             QQApiInterface.send(req)
         }
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {

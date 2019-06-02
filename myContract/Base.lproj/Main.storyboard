@@ -1012,7 +1012,7 @@
                                         <rect key="frame" x="0.0" y="671" width="374" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrf-5D-MhT">
-                                                <rect key="frame" x="0.0" y="0.0" width="183" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="48"/>
                                                 <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="签名">
@@ -1022,8 +1022,19 @@
                                                     <segue destination="YN5-ne-hY6" kind="show" identifier="showSignatureSegue" id="4Tz-HU-Eva"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yY-kL-LIZ">
+                                                <rect key="frame" x="127.5" y="0.0" width="119" height="48"/>
+                                                <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="保存">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="save:" destination="8nd-ay-vv8" eventType="touchUpInside" id="xG6-Nc-WF9"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaR-Bq-usn">
-                                                <rect key="frame" x="191" y="0.0" width="183" height="48"/>
+                                                <rect key="frame" x="254.5" y="0.0" width="119.5" height="48"/>
                                                 <color key="backgroundColor" red="0.28335856100000001" green="0.77657941360000005" blue="0.99193829300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="下一步">
@@ -1050,6 +1061,7 @@
                     <connections>
                         <outlet property="button1" destination="rrf-5D-MhT" id="sJg-eZ-2g1"/>
                         <outlet property="button2" destination="TaR-Bq-usn" id="UU4-HK-EWm"/>
+                        <outlet property="button3" destination="4yY-kL-LIZ" id="M1Y-Vo-3rO"/>
                         <outlet property="pdfView" destination="3TZ-RS-fv1" id="ZCe-Ch-K4o"/>
                         <outlet property="titleOfAdd" destination="Jk8-RU-5kO" id="in4-UM-kbZ"/>
                     </connections>
