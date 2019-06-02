@@ -47,6 +47,7 @@ class addNewContractViewController: UIViewController , signatureDelegate {
     var signatureImage :UIImage?
     var myFile :LCFile?
     var myURL :URL?
+    var name :String.SubSequence?
     var currentlySelectedAnnotation: PDFAnnotation?
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button1: UIButton!
@@ -80,7 +81,9 @@ class addNewContractViewController: UIViewController , signatureDelegate {
     @IBOutlet weak var pdfView: PDFView!
     @objc func notify(_ notification :Notification){
         let str = notification.object
-        print(str)
+        let string = str as! String
+        let s = string.split(separator: "/")
+        name = s.last
         let url = URL(fileURLWithPath: str as! String)
         if let pdfdocument  = PDFDocument(url: url){
             pdfView.document = pdfdocument
@@ -125,7 +128,7 @@ class addNewContractViewController: UIViewController , signatureDelegate {
 //        let myDire: String = NSHomeDirectory() + "/Documents/Rookie/Files"
 //        let fileManager = FileManager.default
 //        try! fileManager.createDirectory(atPath: myDire,withIntermediateDirectories: true, attributes: nil)
-        let path: String = NSHomeDirectory() + "/Documents/Rookie/Files"
+        let path: String = NSHomeDirectory() + "/Documents/Rookie/Files" + name!
         if let result = pdfView.document?.write(toFile: path){
             print(result)
             if result{
